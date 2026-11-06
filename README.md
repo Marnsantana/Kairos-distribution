@@ -8,8 +8,9 @@ Web pública de una página para descargar KAIROS. Estática (HTML + CSS + JS, s
 - **Novedades**: se toman las frases en negrita de las viñetas del cuerpo de la Release (3–5, sin jerga técnica). Menos de 3 → la sección se oculta. Para controlarlas, escribe viñetas `- **Frase corta**: detalle` en las notas.
 - No se toca `update-manifest.json` ni su firma.
 
-## Sustituir las guías
-Copia los PDF en `guides/` con **estos nombres** y haz commit: `KAIROS-Guia-resumen.pdf` (rápida) y `KAIROS-Guia-de-inicio-rapido-Full.pdf` (manual). Mientras falte uno, su tarjeta muestra «Próximamente». Las rutas están en `index.html` (`data-guide`).
+## Guías (PDF)
+`guides/KAIROS-Guia-resumen.pdf` (rápida) y `guides/KAIROS-Guia-de-inicio-rapido-Full.pdf` (manual). Mientras falte uno, su tarjeta muestra «Próximamente».
+Están generadas desde `guides/src/` (contenido en `full.py` y `resumen.py`, capturas en `img/`): edita el texto y ejecuta `python guides/src/build.py` (requiere Node con Playwright/Chromium y `poppler-utils`; actualiza `VERSION` y `FECHA` en `kit.py`). También puedes sustituir los PDF por otros con los mismos nombres. El texto está revisado para la 0.8.0; **las capturas son de la 0.7.2** (la 0.8.0 tiene el editor más compacto) y conviene renovarlas con un equipo Windows.
 
 ## Textos y estilos
 `index.html` (textos, metadatos), `styles.css` (colores en `:root`; naranja `#fe7901`). `assets/` contiene el logo oficial. `og:image` y `og:url` llevan la URL absoluta de producción (WhatsApp la exige): actualízalas si cambia el dominio.
