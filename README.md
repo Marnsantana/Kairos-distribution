@@ -12,7 +12,7 @@ Web pública de una página para descargar KAIROS. Estática (HTML + CSS + JS, s
 Copia los PDF en `guides/` con **estos nombres** y haz commit: `KAIROS-Guia-resumen.pdf` (rápida) y `KAIROS-Guia-de-inicio-rapido-Full.pdf` (manual). Mientras falte uno, su tarjeta muestra «Próximamente». Las rutas están en `index.html` (`data-guide`).
 
 ## Textos y estilos
-`index.html` (textos, metadatos), `styles.css` (colores en `:root`; naranja `#fe7901`). `assets/` contiene el logo oficial. Tras desplegar, pon la URL **absoluta** en `og:image` (WhatsApp lo exige).
+`index.html` (textos, metadatos), `styles.css` (colores en `:root`; naranja `#fe7901`). `assets/` contiene el logo oficial. `og:image` y `og:url` llevan la URL absoluta de producción (WhatsApp la exige): actualízalas si cambia el dominio.
 
 ## Despliegue (Vercel)
 Proyecto importado desde este repositorio, framework «Other», sin build, directorio de salida `/`. Cada push a `main` despliega a producción; el resto de ramas, a preview.
