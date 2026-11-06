@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KAIROS — Cada jugada cuenta</title>
+<meta name="description" content="Analiza partidos, crea clips y prepara sesiones de vídeo para tu equipo. Descarga KAIROS para Windows.">
+<meta name="theme-color" content="#0c0c0c">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KAIROS — Cada jugada cuenta">
+<meta property="og:description" content="Analiza partidos, crea clips y prepara sesiones de vídeo para tu equipo.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="wrap head">
+  <img src="assets/kairos-logo.png" width="56" height="57" alt="Logo de KAIROS"><span>KAIROS</span>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <h1>KAIROS — Cada jugada cuenta</h1>
+    <p class="lead">Analiza partidos, crea clips y prepara sesiones de vídeo para tu equipo.</p>
+    <a class="btn" id="download" href="https://github.com/Marnsantana/kairos-releases/releases/latest/download/KAIROS-Setup.exe">Descargar KAIROS para Windows</a>
+    <p class="meta"><span id="version"></span> <span id="size"></span><br>Compatible con Windows 10/11 (64 bits)</p>
+  </section>
+  <section aria-labelledby="g">
+    <h2 id="g">Guías de usuario</h2>
+    <div class="cards">
+      <a class="card" data-guide href="guides/KAIROS-Guia-resumen.pdf"><strong>Guía rápida</strong><small>Lo esencial en pocas páginas · PDF</small><em class="state">Abrir</em></a>
+      <a class="card" data-guide href="guides/KAIROS-Guia-de-inicio-rapido-Full.pdf"><strong>Manual completo</strong><small>Todas las funciones paso a paso · PDF</small><em class="state">Abrir</em></a>
+    </div>
+  </section>
+  <section id="news" aria-labelledby="news-title" hidden>
+    <h2 id="news-title">Novedades</h2>
+    <ul id="news-list"></ul>
+    <a id="notes-link" class="quiet" href="https://github.com/Marnsantana/kairos-releases/releases/latest">Ver notas completas en GitHub</a>
+  </section>
+</main>
+<footer class="wrap foot">
+  <span>KAIROS <span id="footer-version"></span></span>
+  <a href="https://github.com/Marnsantana/kairos-releases/releases">Publicaciones oficiales</a>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
